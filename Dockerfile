@@ -12,6 +12,9 @@ RUN . /opt/venv/bin/activate && pip install --upgrade pip
 COPY requirements.txt /app/
 RUN . /opt/venv/bin/activate && pip install -r requirements.txt
 
+# Copy input text file
+COPY words.txt /app
+
 # Run job
 COPY beam-flink-pipeline.py  /app
 CMD . /opt/venv/bin/activate && exec python beam-flink-pipeline.py
