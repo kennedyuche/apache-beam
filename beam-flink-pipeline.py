@@ -10,9 +10,9 @@ output_path = '/app/cleaned.txt'
 
 def run():
     options = PipelineOptions([
-        "--runner=FlinkRunner",
-        "--flink_version=1.13",
-        "--flink_master=localhost:8081"
+        "--runner=DirectRunner",
+        # "--flink_version=1.13",
+        # "--flink_master=localhost:8081"
     ])
 
     with beam.Pipeline(options=options) as pipeline:
