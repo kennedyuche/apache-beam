@@ -5,8 +5,8 @@ from apache_beam.options.pipeline_options import PipelineOptions
 import apache_beam.transforms.window as window
 import re
 
-input_file = '.\words.txt'
-output_path = '.\cleaned.txt'
+input_file = '/app/words.txt'
+output_path = '/app/cleaned.txt'
 
 def run():
     options = PipelineOptions([
