@@ -6,7 +6,7 @@ USER root
 
 WORKDIR /app
 
-RUN apt-get install python3-pip
+RUN pip install --upgrade pip
 
 # Install dependencies
 COPY requirements.txt /app/
