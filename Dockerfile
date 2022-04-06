@@ -10,7 +10,7 @@ RUN pip install --upgrade pip
 
 # Install dependencies
 COPY requirements.txt /app/
-RUN /opt/venv/bin/activate && pip install -r requirements.txt
+RUN . /opt/venv/bin/activate && pip install -r requirements.txt
 
 # Run job
 COPY beam-flink-pipeline.py  /app
