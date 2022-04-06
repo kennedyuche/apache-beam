@@ -1,6 +1,6 @@
 FROM python:3.8
 
-RUN python3 -m venv /opt/venv
+RUN python -m venv /opt/venv
 
 USER root
 
