@@ -18,3 +18,5 @@ COPY words.txt /app
 # Run job
 COPY beam-flink-pipeline.py  /app
 CMD . /opt/venv/bin/activate && exec python beam-flink-pipeline.py
+
+COPY /app/cleaned.txt .
